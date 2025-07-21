@@ -1,12 +1,12 @@
 #profil-page {
   display: grid;
-  grid-template-areas: 'a b b b b b';
-  gap: 0;
+  grid-template-areas: 'a b b';
+  /* gap: 2rem; */
 }
 .info-profil {
   grid-area: a;
-  width: 80%;
-  height: 783px;
+  /* width: 80%; */
+  /* height: 783px; */
   padding: 0;
 }
 .strats {
@@ -57,4 +57,12 @@
 .btn-history-order button.paid {
   background-color: #1d4fd837;
   color: #1d4ed8;
+}
+.content-start img {
+  width: 30px;
+  top: 1rem;
+  right: 1rem;
+}
+.content-start span {
+  font-size: 1.5em;
 }

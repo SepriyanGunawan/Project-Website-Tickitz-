@@ -35,16 +35,18 @@
   color: var(--primary-color);
   border-radius: 15px;
 }
-.slide-start h3 {
-  /* text-align: center; */
-  font-weight: 500;
-  color: var(--teks-body);
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-}
+
 /* .info-profil {
   width: 80%;
 } */
 .content-start span {
-  font-size: 2em;
+  font-size: 1.2em;
+}
+.content-start img {
+  width: 30px;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+.content-start h1 {
+  margin-right: 3rem;
 }

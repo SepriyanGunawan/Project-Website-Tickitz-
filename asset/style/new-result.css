@@ -31,3 +31,18 @@ div.new-qr-kontent {
   margin-top: 1rem;
   font-size: 2em;
 }
+.info-profil {
+  margin-left: 0;
+  width: 100%;
+}
+#profil-page {
+  display: grid;
+  grid-template-areas: 'a b b';
+  gap: 1rem;
+}
+.new-total-qr {
+  margin-right: 1rem;
+}
+.content-start h1 {
+  margin-right: 4rem;
+}
