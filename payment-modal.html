@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Payment-info" />
+    <title>ticket Payment info</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet" />
+
+    <!-- link font mulish -->
+    <link rel="stylesheet" href="./asset/style/home.css" />
+
+    <link rel="stylesheet" href="./asset/style/payment-info.css" />
+    <link rel="stylesheet" href="./asset/style/payment-modal.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <img src="./asset/img/Tickitz 1 home.svg" alt="Logo tickitz" />
+        <nav>
+          <a href="">Home</a>
+          <a href="">Movie</a>
+          <a href="">Buy Ticket</a>
+        </nav>
+        <div class="btn-login">
+          <button type="button">SignIn</button>
+          <button type="button">Sign Up</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="step-login">
+        <div class="fill-form">
+          <div><img src="./asset/check-list.svg" alt="check-list" /></div>
+          <p>Dates And Time</p>
+        </div>
+        <div></div>
+        <div class="activate">
+          <div><img src="./asset/check-list.svg" alt="check list" /></div>
+          <p>Seat</p>
+        </div>
+        <div></div>
+        <div class="done">
+          <div>3</div>
+          <p>Payment</p>
+        </div>
+      </div>
+      <section id="payment-info">
+        <div class="payment-info-content">
+          <div><h3>Payment Info</h3></div>
+          <div><label for="date-times">DATE & TIME</label></div>
+          <div><input type="text" name="date-times" id="date-times" value="Tuesday, 07 July 2020 at 02:00pm" /></div>
+          <div><label for="movie-title">MOVIE TITLE</label></div>
+          <div><input type="text" name="movie-title" id="movie-title" value="Spider-Man: Homecoming" /></div>
+          <div><label for="cinema-name">CINEMA NAME</label></div>
+          <div><input type="text" name="cinema-name" id="cinema-name" value="CineOne21 Cinema" /></div>
+          <div><label for="number-tiket">NUMBER OF TICKETS</label></div>
+          <div><input type="text" name="number-tiket" id="number-tiket" value="3 pieces" /></div>
+          <div><label for="total-payment">TOTAL PAYMENT</label></div>
+          <div><input type="text" name="total-payment" id="total-payment" value="$30,00" /></div>
+        </div>
+        <div class="personal-payment">
+          <div><h3>Personal Information</h3></div>
+          <div><label for="full-name">Full Name</label></div>
+          <div><input type="text" name="full-name" id="full-name" value="Jonas El Rodriguez" /></div>
+          <div><label for="email">Email</label></div>
+          <div><input type="text" name="email" id="email" value="jonasrodri123@gmail.com" /></div>
+          <div><label for="phone">Phone Number</label></div>
+          <div><input type="text" name="phone" id="phone" value="+62 | 81445687121" /></div>
+        </div>
+        <div class="payment-method">
+          <div><h3>Payment Method</h3></div>
+          <div class="choose-method">
+            <div><img src="./asset/img/logos_google-pay.svg" alt="logos_google-pay" /></div>
+            <div><img src="./asset/img/logos_visa.svg" alt="logos_visa" /></div>
+            <div><img src="./asset/img/Logo GoPay (SVG-240p) - FileVector69 1.svg" alt="GoPay" /></div>
+            <div><img src="./asset/img/logos_paypal.svg" alt="logos_paypal" /></div>
+            <div><img src="./asset/img/Logo DANA (PNG-240p) - FileVector69 1.svg" alt="DANA" /></div>
+            <div><img src="./asset/img/Bank BCA Logo (SVG-240p) - FileVector69 1.svg" alt="Bank-BCA" /></div>
+            <div><img src="./asset/img/Bank BRI (Bank Rakyat Indonesia) Logo (SVG-240p) - FileVector69 1.svg" alt="Bank-BRI" /></div>
+            <div><img src="./asset/img/ovo.svg" alt="ovo" /></div>
+          </div>
+        </div>
+        <button type="submit" class="btn-payment">Pay your order</button>
+      </section>
+      <div class="bg-modal">
+        <div class="kontent-modal">
+          <h2>Payment Info</h2>
+          <div class="rekening-virtual">
+            <p>No. Rekening Virtual :</p>
+            <h3>12321328913829724</h3>
+            <button type="button">copy</button>
+          </div>
+          <div class="payment-total">
+            <p>Total Payment :</p>
+            <h2 class="total">$30</h2>
+          </div>
+          <div>
+            <p>Pay this payment bill before it is due, <span>on June 23, 2023</span>. If the bill has not been paid by the specified time, it will be forfeited</p>
+          </div>
+          <a href="result-tiket.html"><button type="submit" class="btn-payment">Check Payment</button></a>
+          <button type="submit" class="btn-payleter">Pay Later</button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="logo-footer">
+        <img src="./asset/img/Tickitz 1 home.svg" alt="logo-Tickitz" width="170px" />
+        <p>
+          Stop waiting in line. Buy tickets conveniently,<br />
+          watch movies quietly.
+        </p>
+      </div>
+      <div class="explore">
+        <h3>Explore</h3>
+        <p>Cinemas</p>
+        <p>Movies List</p>
+        <p>My Ticket</p>
+        <p>Notification</p>
+      </div>
+      <div class="sponsor">
+        <h3>Our Sponsor</h3>
+        <div>
+          <img src="./asset/img/ebv.id 2.svg" alt="ebv-logo" />
+        </div>
+        <div>
+          <img src="./asset/img/CineOne21 2.svg" alt="CineOne" />
+        </div>
+        <div>
+          <img src="./asset/img/hiflix 2.svg" alt="hiflix" />
+        </div>
+      </div>
+      <div class="follow-us">
+        <h3>Follow us</h3>
+        <div><img src="./asset/img/eva_facebook-outline.svg" alt="eva_facebook-outline" /> Tickitz Cinema id</div>
+        <div><img src="./asset/img/bx_bxl-instagram.svg" alt="bx_bxl-instagram" /> tickitz.id</div>
+        <div><img src="./asset/img/eva_twitter-outline.svg" alt="twiter" /> tickitz.id</div>
+        <div><img src="./asset/img/feather_youtube.svg" alt="youtube" /> Tickitz Cinema id</div>
+      </div>
+      <p class="copy-rigt">© 2020 Tickitz. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+#profil-page {
+  display: grid;
+  grid-template-areas: 'a b b b b b';
+  gap: 0;
+}
+.info-profil {
+  grid-area: a;
+  width: 80%;
+  height: 783px;
+  padding: 0;
+}
+.strats {
+  margin: 1rem;
+}
+.history-order {
+  background: #ffff;
+  border-radius: 15px;
+}
+.history-order-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem;
+  margin-top: 2rem;
+  border-bottom: 2px solid #dedede;
+}
+.history-order-content p {
+  margin-bottom: 10px;
+}
+.btn-history-order {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-top: 3rem; */
+  padding: 2.5rem;
+}
+.btn-history-order button {
+  margin-right: 2rem;
+  height: 40px;
+  /* width: 136px; */
+  padding: 0.5rem 3rem;
+  border-radius: 10px;
+  font-size: 1em;
+}
+.btn-history-order button.add {
+  color: #00ba88;
+  background: #00ba883b;
+}
+.btn-history-order button.out {
+  color: #e82c2c;
+  background: #e82c2c30;
+}
+.btn-history-order button.used {
+  background-color: #6e719139;
+  color: #6e7191;
+}
+.btn-history-order button.paid {
+  background-color: #1d4fd837;
+  color: #1d4ed8;
+}

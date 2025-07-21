@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(../img/sign-up.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* min-height: 100vh; */
+  font-family: 'Mulish', sans-serif;
+  font-optical-sizing: auto;
+}
+button {
+  border: none; /* Menghilangkan garis tepi (border) */
+  outline: none; /* Menghilangkan garis luar (outline) */
+}
+:root {
+  --primary-color: #ffff;
+  --teks-body: #454c58;
+  --light-grey: #a0a3bd;
+  --second-color: #1d4ed8;
+}
+main {
+  /* text-align: center; */
+  margin: 50px auto;
+}
+
+.content-sign-up {
+  margin: 35px auto;
+  width: 546px;
+  padding: 35px 0;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+}
+.logo-sign-up {
+  text-align: center;
+}
+/* welcome back sign-in */
+.weloceme-sign-in {
+  /* margin: auto; */
+  padding: 30px 0;
+  width: 80%;
+  margin: auto;
+  /* border: 1px solid black; */
+}
+.weloceme-sign-in h3 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+.weloceme-sign-in p {
+  font-size: 18px;
+  color: var(--light-grey);
+}
+/* finish welcome back sign-in */
+/* from  */
+form {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 35px;
+  font-size: 16px;
+}
+
+form > div:nth-child(5) {
+  color: var(--light-grey);
+  text-align: center;
+}
+/* inputan email and password */
+form > div > input[name='email'],
+form > div > input[name='password'] {
+  height: 64px;
+  width: 100%;
+  padding-left: 20px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+/* div > label[for='email'],
+label[for='pwd'] {
+  margin-bottom: 40px;
+  background-color: #1d4ed8;
+} */
+/* inputan fisnish email and password */
+
+/* button join */
+form > button {
+  height: 64px;
+  background-color: var(--second-color);
+  color: var(--primary-color);
+  border-radius: 4px;
+  transition: 0.3s;
+  font-size: 16px;
+  font-weight: bold;
+}
+form > button:hover {
+  background-color: #062a8c;
+}
+/* forget your password */
+.forgot-pwd {
+  margin-left: 260px;
+}
+.forgot-pwd a {
+  text-decoration: none;
+}
+/* forget your password */
+/* this btn google and facebook */
+form > div > button {
+  height: 64px;
+  width: 182px;
+  font-size: 18px;
+  background-color: var(--primary-color);
+  color: var(--light-grey);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+form > div:last-child {
+  display: flex;
+  column-gap: 20px;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+/* this btn google and facebook */
+/* eye password */
+form > div:nth-child(2) {
+  position: relative;
+}
+form > div:nth-child(2) > img {
+  position: absolute;
+  right: 20px;
+  top: 50px;
+}
+/* eye password finish */
+/* untuk mengatur placholder */
+/* input::placeholder {
+  padding-left: 20px;
+} */

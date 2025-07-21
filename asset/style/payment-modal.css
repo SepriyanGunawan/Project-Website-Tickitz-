@@ -1,0 +1,75 @@
+.kontent-modal {
+  width: 545px;
+  background-color: #ffff;
+  margin: 0 auto;
+  padding: 20px 10px;
+  border-radius: 10px;
+  /* position: absolute; */
+}
+.kontent-modal h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.kontent-modal > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.rekening-virtual button {
+  border: 1px solid blue;
+  background: transparent;
+  width: 72px;
+  font-size: 1em;
+  color: #1d4ed8;
+  height: 45px;
+  /* margin-bottom: 1rem; */
+}
+.payment-total h2 {
+  color: #1d4ed8;
+}
+.btn-payleter {
+  width: 100%;
+  margin-top: 1rem;
+  height: 54px;
+  color: #1d4ed8;
+  font-weight: bold;
+  font-size: 1em;
+  background: transparent;
+}
+.kontent-modal span {
+  color: red;
+}
+/* main {
+  background-color: black;
+  height: 100%; */
+/* position: relative;
+  z-index: 10; */
+footer {
+  position: relative;
+  z-index: 100;
+  margin: 0;
+}
+main {
+  position: relative;
+  padding-bottom: 1rem;
+}
+.bg-modal {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.123);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+}
+header {
+  position: relative;
+  z-index: 200;
+}
+section {
+  margin: 0 auto;
+}

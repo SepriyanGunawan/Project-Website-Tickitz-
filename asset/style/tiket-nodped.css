@@ -1,0 +1,50 @@
+:root {
+  --primary-color: #ffff;
+  --teks-body: #1f232b;
+  --light-grey: #a0a3bd;
+  --second-color: #1d4ed8;
+}
+.info-hitory > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.rekening-virtual > div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.info-hitory {
+  padding: 2rem;
+  /* border: 1px solid black; */
+}
+.info-hitory span {
+  color: red;
+}
+.profil-account-set h3 {
+  margin-left: 2rem;
+  color: #4b4a4a;
+}
+.btn-history-order {
+  padding-bottom: 2rem;
+}
+.btn-payment {
+  background-color: var(--second-color);
+  padding: 1rem 2rem;
+  color: var(--primary-color);
+  border-radius: 15px;
+}
+.slide-start h3 {
+  /* text-align: center; */
+  font-weight: 500;
+  color: var(--teks-body);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+/* .info-profil {
+  width: 80%;
+} */
+.content-start span {
+  font-size: 2em;
+}
