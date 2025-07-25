@@ -59,11 +59,11 @@ form.addEventListener('submit', (e) => {
     // return;
   }
   alert(`email & password berhasil di buat`);
-  localStorage.setItem('name', 'Dikih Arif Wibowo');
-
-  let checkstorege = localStorage.getItem('name');
+  localStorage.setItem('email', emailvalue);
+  localStorage.setItem('password', password);
+  let checkstorege = localStorage.getItem('email'); // ganti dari 'name' ke 'email'
   console.log(checkstorege);
   if (checkstorege) {
-    window.location.href = '../index.html';
+    window.location.href = '../sign-in.html';
   }
 });

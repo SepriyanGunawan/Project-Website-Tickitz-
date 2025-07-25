@@ -173,6 +173,7 @@ input[type='time']::-webkit-calendar-picker-indicator {
   }
   .details-texts h1 {
     font-size: 2em;
+    text-align: center;
   }
   .genre-btn {
     justify-content: center;
@@ -200,6 +201,7 @@ input[type='time']::-webkit-calendar-picker-indicator {
   }
   .date-inputs button {
     width: 100%;
+    margin-top: 1rem;
   }
   .inputs-date-movie {
     width: 100%;

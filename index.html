@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Home Tickitz" />
     <title>Home Tickitz</title>
+    <script src="./asset/js/home.js" defer></script>
     <!-- font google -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +13,8 @@
 
     <!-- link font mulish -->
     <link rel="stylesheet" href="./asset/style/home.css" />
+    <script src="./asset/js/main.js" defer></script>
+    <script src="./asset/js/sign-in.js" defer></script>
   </head>
   <body>
     <main>
@@ -20,15 +23,34 @@
         <div class="navbar">
           <img src="./asset/img/Tickitz 1 home.svg" alt="Logo tickitz" />
           <nav>
-            <a href="home.html">Home</a>
+            <a href="index.html">Home</a>
             <a href="movie.html">Movie</a>
             <a href="orderTicket.html">Buy Ticket</a>
           </nav>
           <div class="btn-login">
             <a href="sign-in.html"><button type="button">SignIn</button></a>
             <a href="sign-up.html" class="aktif"><button type="button">Sign Up</button></a>
-            <img src="/asset/img/gg_menu-right-alt.svg" alt="" />
+            <img src="/asset/img/gg_menu-right-alt.svg" alt="" class="hamMenu" />
           </div>
+          <div class="profil-nav">
+            <p>Location</p>
+            <img src="./asset/img/profil-rowdown.svg" alt="row" />
+            <img src="./asset/img/seacrh-profil.svg" alt="seacrh-profil" />
+            <img src="./asset/img/profil.svg" alt="profil" class="foto-profil" />
+          </div>
+        </div>
+        <div class="select-nav">
+          <div><a href="index.html">Home</a></div>
+          <div><a href="movie.html">Movie</a></div>
+          <div><a href="orderTicket.html">Buy Ticket</a></div>
+          <a href="sign-in.html"><button type="button">SignIn</button></a>
+          <a href="sign-up.html"><button type="button" class="aktif">Sign Up</button></a>
+        </div>
+        <div class="profil-select">
+          <div><a href="index.html">Home</a></div>
+          <div><a href="movie.html">Movie</a></div>
+          <div><a href="orderTicket.html">Buy Ticket</a></div>
+          <a href="#"><button type="button" class="logout">logut</button></a>
         </div>
       </header>
       <!--  header navbar-->

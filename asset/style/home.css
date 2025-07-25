@@ -373,10 +373,97 @@ footer h3 {
 .btn-login img {
   display: none;
 }
+.select-nav {
+  display: none;
+}
+
+.profil-nav {
+  display: none;
+  align-items: center;
+  column-gap: 15px;
+}
+.profil-aktif {
+  display: flex;
+}
+.btn-hiden {
+  display: none;
+}
+.profil-select {
+  display: none;
+}
+.profil-klick {
+  display: block;
+}
 /* ============== foooter ============ */
 /* responsive  */
 
 @media screen and (max-width: 768px) {
+  .select-nav {
+    right: 0;
+    position: absolute;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 150px;
+    padding: 1rem 0;
+    background-color: #a0a3bde0;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  .profil-select {
+    right: 50px;
+    position: absolute;
+    width: 150px;
+    padding: 1rem 0;
+    background-color: #a0a3bde0;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    text-align: center;
+  }
+  .profil-select > div {
+    margin-bottom: 10px;
+  }
+  .profil-select > div:hover {
+    color: #a0a3bd;
+  }
+  .profil-select button {
+    width: 100%;
+    height: 30px;
+  }
+  .active-humMenu {
+    display: flex;
+  }
+  .select-nav a {
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: 0.3s;
+    & button:hover {
+      background-color: #e6e6e6;
+    }
+  }
+  .select-nav a:hover {
+    color: #e8e7e7;
+  }
+
+  .select-nav button {
+    width: 80%;
+    height: 30px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+  }
+  .select-nav .aktif {
+    background-color: var(--second-color);
+    color: var(--primary-color);
+    &:hover {
+      background-color: #0b3bc1;
+    }
+  }
+
   .btn-login button {
     display: none;
   }

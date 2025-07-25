@@ -58,12 +58,14 @@ form.addEventListener('submit', (e) => {
     return;
     // return;
   }
-  console.log(`email berhasil & password`);
-  localStorage.setItem('name', 'Dikih Arif Wibowo');
-  // if ()
+  const storedEmail = localStorage.getItem('email');
+  const storedPassword = localStorage.getItem('password');
+
+  if (emailvalue === storedEmail && password === storedPassword) {
+    alert('Login berhasil, menuju ke halaman HOME');
+    localStorage.setItem('loggedIn', 'true');
+    window.location.href = '../index.html';
+  } else {
+    alert('Email atau password salah');
+  }
 });
-let checkstorege = localStorage.getItem('name');
-console.log(checkstorege);
-if (checkstorege) {
-  window.location.href = '../index.html';
-}

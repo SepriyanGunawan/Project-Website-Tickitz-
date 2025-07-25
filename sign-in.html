@@ -6,6 +6,7 @@
     <meta name="description" content="Tickitz, Stream website" />
     <title>Tickitz</title>
     <!-- font Mulish -->
+    <script src="./asset/js/sign-in.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet" />
@@ -26,15 +27,18 @@
           <form>
             <div>
               <label for="email">Email</label>
-              <input type="email" name="email" id="email" placeholder="Enter your email" />
+              <input type="text" name="email" id="email" placeholder="Enter your email" />
+              <i><p class="text-warning-email"></p></i>
             </div>
             <div>
               <label for="pwd">Password</label>
               <input type="password" name="password" id="pwd" placeholder="Enter your password" />
-              <img src="./asset/img/eye 1.svg" alt="eye password" />
+              <i><p class="text-warning-pass"></p></i>
+              <img src="./asset/img/eye 1.svg" alt="eye password" class="open" />
+              <img src="./asset/img/eye-slash-regular-full.svg" alt="eye-close" class="close" />
             </div>
             <div class="forgot-pwd"><a href="">Forgot your password?</a></div>
-            <button type="submit">Join For Free Now</button>
+            <button type="submit">Login</button>
             <div>_____________________ or _____________________</div>
             <div>
               <button type="button"><img src="./asset/img/flat-color-icons_google.svg" alt="" /> Google</button>

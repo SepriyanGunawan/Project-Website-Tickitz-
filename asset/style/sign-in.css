@@ -125,9 +125,18 @@ form > div:nth-child(2) {
   position: relative;
 }
 form > div:nth-child(2) > img {
+  width: 20px;
+  height: 20px;
   position: absolute;
   right: 20px;
   top: 50px;
+}
+.eye {
+  display: none;
+}
+.text-warning-pass,
+.text-warning-email {
+  color: red;
 }
 /* eye password finish */
 /* untuk mengatur placholder */
