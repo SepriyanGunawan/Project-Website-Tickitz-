@@ -5,68 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Profil Ticket" />
     <title>Profil Ticket</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- font google -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet" />
     <!-- link font mulish -->
-    <link rel="stylesheet" href="./asset/style/home.css" />
-    <link rel="stylesheet" href="./asset/style/profil-page.css" />
+    <!-- <link rel="stylesheet" href="./asset/style/home.css" />
+    <link rel="stylesheet" href="./asset/style/profil-page.css" /> -->
   </head>
-  <body>
-    <header>
-      <div class="navbar">
-        <img src="./asset/img/Tickitz 1 home.svg" alt="Logo tickitz" />
-        <nav>
-          <a href="">Home</a>
-          <a href="">Movie</a>
-          <a href="">Buy Ticket</a>
+  <body class="bg-[#dedede] font-[Mulish] tracking-wide">
+    <header class="bg-[#ffff]">
+      <div class="px-15 flex items-center justify-between">
+        <img src="./asset/img/Tickitz 1 home.svg" alt="Logo tickitz" class="w-[100px] h-[100px] md:size-[100px]" />
+        <nav class="hidden md:block">
+          <a href="" class="mr-[3rem]">Home</a>
+          <a href="" class="mr-[3rem]">Movie</a>
+          <a href="" class="mr-[3rem]">Buy Ticket</a>
         </nav>
-        <div class="profil-nav">
+        <div class="flex gap-2 md:hidden">
+          <img src="./asset/img/gg_menu-right-alt.svg" alt="hemberger" />
+        </div>
+        <div class="hidden md:flex md:gap-3 md:items-center">
           <p>Location</p>
           <img src="./asset/img/profil-rowdown.svg" alt="row" />
           <img src="./asset/img/seacrh-profil.svg" alt="seacrh-profil" />
           <img src="./asset/img/profil.svg" alt="profil" />
         </div>
       </div>
+      <div class="flex justify-between px-15 md:hidden">
+        <div class="p-3 border-b-2 border-blue-500 text-xl">Details Account</div>
+        <div class="p-3 text-xl">Order History</div>
+      </div>
     </header>
-    <section id="profil-page">
-      <div class="info-profil">
-        <div>
+    <section id="profil-page" class="px-15 md:px-10 md:grid grid-cols-[repeat(auto-fit,minmax(0,1fr)_minmax(0,2fr))] md:gap-1">
+      <div class="bg-white mt-5 p-10 rounded-xl overflow-hidden md:pb-0 md:h-[90%]">
+        <div class="flex justify-between mb-3">
           <h3>INFO</h3>
-          <img src="./asset/img/oval3.svg" alt="oval" />
+          <img src="./asset/img/oval3.svg" alt="oval" class="hidden md:block" />
         </div>
-        <div class="profil-img">
-          <img src="./asset/img/profil.svg" alt="profil" />
-          <h2>Jonas El Rodriguez</h2>
-          <h4>Moviegoers</h4>
+        <div class="pb-15 border-b-2 border-gray-300">
+          <div class="w-[10rem] h-[10rem] rounded-full mx-auto shadow-[0_5px_20px_rgba(0,0,0,0.25)]">
+            <img src="./asset/img/profil.svg" alt="profil" class="w-[100%]" />
+          </div>
+          <div class="mt-10">
+            <h2 class="text-center mb-5 text-3xl font-bold">Jonas El Rodriguez</h2>
+            <h3 class="text-center text-xl">Moviegoers</h3>
+          </div>
         </div>
         <div class="strats">
-          <h3>Loyalty Points</h3>
-          <div class="content-start">
-            <h1>Moviegoers</h1>
-            <p><span>320</span> Point</p>
-            <div></div>
-            <div></div>
-            <img src="./asset/img/start-profil.svg" alt="start" />
+          <h3 class="text-2xl text-[#5f6172] my-10">Loyalty Points</h3>
+          <div class="bg-[#1d4ed8] rounded-xl px-5 py-5 relative">
+            <h1 class="text-2xl font-semibold tracking-wide text-[#ffff] mb-20">Moviegoers</h1>
+            <p class="text-[#ffff]"><span class="text-3xl font-semibold">320</span> Point</p>
+            <div class="w-30 h-30 bg-[#ffffff52] absolute rounded-full top-[-2rem] right-[-1rem]"></div>
+            <div class="w-30 h-30 bg-[#ffffff52] absolute rounded-full top-[0] right-[-3rem]"></div>
+
+            <img src="./asset/img/start-profil.svg" alt="start" class="absolute top-4 right-5" />
           </div>
-          <div class="slide-start">
-            <h1>180 points become a master</h1>
-            <div>
-              <div></div>
+          <div class="w-[95%] h-[3rem] rounded-xl mx-auto mt-[-2.5rem] bg-[#1d4fd87b]"></div>
+          <div class="slide-start mt-3">
+            <h1 class="text-xl">180 points become a master</h1>
+            <div class="w-[100%] h-5 bg-[#f9f7f7] rounded-xl shadow-inner shadow-[#dedede] mt-3">
+              <div class="w-[50%] h-[100%] bg-[#1d4ed8] rounded-xl"></div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="profil-account-set">
-        <div class="menu-account">
-          <div class="menu-active">Account Settings</div>
-          <div><a href="order-history.html">Order History</a></div>
+        <div class="edit w-[100%] h-[4rem] border-solid border-[#1d4ed8] border-1 mt-[4rem] rounded-xl md:hidden">
+          <button type="button" class="w-[100%] h-[100%] cursor-pointer font-bold text-xl text-[#1d4ed8] md:hidden">Edit profil</button>
         </div>
-        <div class="details-infomasi">
-          <div><p>Details Information</p></div>
+      </div>
+      <div class="profil-account-set bg-[#ffff] mt-5 rounded-xl md:grid md:gap-5 md:bg-transparent md:pt-0 p-10 md:w-[100%]">
+        <div class="sm:hidden md:flex md:bg-[#ffff] md:pt-3 px-3 md:rounded-xl gap-2">
+          <div class="border-b-2 border-blue-500 p-3">Details Account</div>
+          <div class="p-3">Order History</div>
+        </div>
+        <div class="menu-account md:hidden">
+          <div class="menu-active text-3xl font-bold mb-10">Account Settings</div>
+          <div class="hidden"><a href="order-history.html">Order History</a></div>
+        </div>
+        <div class="details-infomasi md:bg-[#ffff] md:rounded-xl md:px-5 md:py-10">
+          <div class="h-[3rem] border-b-2 border-[#dedede] text-2xl"><p>Details Information</p></div>
           <div class="input-infomasi">
-            <div class="item-input">
+            <div class="item-input hidden">
               <div>
                 <label for="first-name">First Name</label>
                 <div><input type="text" name="first-name" id="first-name" value="Jonas" /></div>
@@ -76,34 +97,46 @@
                 <div><input type="text" name="last-name" id="last-name" value="El Rodriguez" /></div>
               </div>
             </div>
-            <div class="item-input">
+            <div class="fullname mt-3">
+              <label for="fullname" class="text-xl">Full Name</label>
+              <div class="h-[4rem] border-2 border-[#dedede] rounded-xl mt-2"><input type="text" name="fullname" id="fullname" placeholder="your name" class="h-[100%] w-[100%] p-5 text-xl" /></div>
+            </div>
+            <div class="item-input mt-3">
               <div>
-                <label for="email">E-mail</label>
-                <div><input type="email" name="email" id="email" value="jonasrodrigu123@gmail.com" /></div>
+                <label for="email" class="text-xl">E-mail</label>
+                <div class="h-[4rem] border-2 border-[#dedede] rounded-xl mt-2"><input type="email" name="email" id="email" value="jonasrodrigu123@gmail.com" class="h-[100%] w-[100%] p-5 text-xl" /></div>
               </div>
-              <div>
-                <label for="phone">Phone Number</label>
-                <div><input type="text" name="phone" id="phone" value="+62  |  81445687121" /></div>
+              <div class="mt-3">
+                <label for="phone" class="text-xl">Phone Number</label>
+                <div class="h-[4rem] border-2 border-[#dedede] rounded-xl mt-2"><input type="text" name="phone" id="phone" value="+62  |  81445687121" class="h-[100%] w-[100%] p-5 text-xl" /></div>
               </div>
             </div>
           </div>
         </div>
-        <div class="details-infomasi">
-          <div><p>Account and Privacy</p></div>
+        <div class="details-infomasi md:bg-[#ffff] md:p-5 md:py-10 md:rounded-xl">
+          <div class="h-[3rem] border-b-2 border-[#dedede] text-2xl my-10 md:m-0"><p>Account and Privacy</p></div>
           <div class="input-infomasi">
             <div class="item-input">
-              <div>
-                <label for="password">New Password</label>
-                <div><input type="password" name="password" id="password" placeholder="Write your password" /> <img src="./asset/img/eye 1.svg" alt="eye password" /></div>
+              <div class="mt-3">
+                <label for="password" class="text-xl">New Password</label>
+                <div class="h-[4rem] border-2 border-[#dedede] rounded-xl mt-2 relative">
+                  <input class="h-[100%] w-[100%] p-5 text-xl" type="password" name="password" id="password" placeholder="Write your password" />
+                  <img src="./asset/img/eye 1.svg" alt="eye password" class="absolute top-[1.2rem] right-[1rem]" />
+                </div>
               </div>
-              <div>
-                <label for="conf-pwd">Confirm Password</label>
-                <div><input type="text" name="conf-pwd" id="conf-pwd" placeholder="Confirm your password" /> <img src="./asset/img/eye 1.svg" alt="eye password" /></div>
+              <div class="mt-3">
+                <label for="conf-pwd" class="text-xl">Confirm Password</label>
+                <div class="h-[4rem] border-2 border-[#dedede] rounded-xl mt-2 relative">
+                  <input class="h-[100%] w-[100%] p-5 text-xl" type="text" name="conf-pwd" id="conf-pwd" placeholder="Confirm your password" />
+                  <img src="./asset/img/eye 1.svg" alt="eye password" class="absolute top-[1.2rem] right-[1rem]" />
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <button type="button" class="chenge-pwd">Update changes</button>
+        <div class="h-[3rem] bg-[#1d4ed8] mt-10 rounded-xl md:w-[40%] md:mt-0">
+          <button type="button" class="w-[100%] h-[100%] text-[#fff]">Update changes</button>
+        </div>
       </div>
     </section>
   </body>
