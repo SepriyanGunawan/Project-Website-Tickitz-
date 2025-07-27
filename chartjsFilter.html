@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sales Chart</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="chartsFilter.js" defer></script>
+  </head>
+  <body class="min-h-screen bg-gray-100">
+    <div class="w-full bg-white rounded-2xl shadow-lg p-10">
+      <h2 class="text-xl font-semibold mb-4">Sales Chart</h2>
+
+      <!-- Dropdowns -->
+      <div class="space-y-3 md:flex md:gap-5 md:items-end">
+        <select id="movieSelect" class="w-full px-4 py-3 rounded-lg bg-gray-100 md:w-[20%] md:h-[3rem]">
+          <option value="avengers">Avengers: End Game</option>
+          <option value="batman">The Batman</option>
+          <option value="joker">Joker</option>
+        </select>
+
+        <select id="timeRange" class="w-full px-4 py-2 rounded-lg bg-gray-100 md:w-[20%] md:h-[3rem]">
+          <option>Weekly</option>
+        </select>
+
+        <button id="filterBtn" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 md:w-[20%] md:h-[3rem]">Filter</button>
+      </div>
+
+      <!-- Chart -->
+      <div class="mt-10 md:w-[80%] md:mx-auto">
+        <p class="mt-4 font-medium" id="movieTitle">Avengers: End Game</p>
+        <canvas id="salesChart" height="200"></canvas>
+      </div>
+    </div>
+    <div class="w-full bg-white rounded-2xl shadow-lg p-10">
+      <h2 class="text-xl font-semibold mb-4">Tiket sales</h2>
+
+      <!-- Dropdowns -->
+      <div class="space-y-3 md:flex md:gap-5 md:items-end">
+        <select id="movieSelect2" class="w-full px-4 py-3 rounded-lg bg-gray-100 md:w-[20%] md:h-[3rem]">
+          <option value="avengers">Avengers: End Game</option>
+          <option value="batman">The Batman</option>
+          <option value="joker">Joker</option>
+        </select>
+
+        <select id="timeRange2" class="w-full px-4 py-2 rounded-lg bg-gray-100 md:w-[20%] md:h-[3rem]">
+          <option>Weekly</option>
+        </select>
+
+        <button id="filterBtn2" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 md:w-[20%] md:h-[3rem]">Filter</button>
+      </div>
+
+      <!-- Chart -->
+      <div class="mt-10 md:w-[80%] md:mx-auto">
+        <p class="mt-4 font-medium" id="movieTitle2">Avengers: End Game</p>
+        <canvas id="tiketSales" height="200"></canvas>
+      </div>
+    </div>
+
+    <!-- <script>
+      const movieSelect = document.getElementById('movieSelect');
+      const filterBtn = document.getElementById('filterBtn');
+      const movieTitle = document.getElementById('movieTitle');
+      const movieSelect2 = document.getElementById('movieSelect2');
+      const filterBtn2 = document.getElementById('filterBtn2');
+      const movieTitle2 = document.getElementById('movieTitle2');
+
+      const chartCanvas = document.getElementById('salesChart');
+      const chartCanvas2 = document.getElementById('tiketSales');
+
+      const dummyData = {
+        avengers: [300, 400, 700, 500],
+        batman: [150, 200, 250, 300],
+        joker: [100, 300, 500, 400],
+      };
+      const dummyData2 = {
+        avengers: [200, 100, 600, 500],
+        batman: [150, 200, 250, 300],
+        joker: [100, 300, 500, 400],
+      };
+
+      let salesChart = new Chart(chartCanvas, {
+        type: 'line',
+        data: {
+          labels: ['Jan', 'Feb', 'Mar', 'Apr'],
+          datasets: [
+            {
+              label: 'Sales',
+              data: dummyData['avengers'],
+              borderColor: '#2563EB',
+              backgroundColor: 'rgba(37, 99, 235, 0.3)',
+              fill: true,
+              tension: 0.4,
+              pointBackgroundColor: '#2563EB',
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          scales: {
+            y: {
+              beginAtZero: true,
+              ticks: {
+                callback: (value) => `$${value}`,
+              },
+            },
+          },
+        },
+      });
+
+      filterBtn.addEventListener('click', () => {
+        const selectedMovie = movieSelect.value;
+        salesChart.data.datasets[0].data = dummyData[selectedMovie];
+        movieTitle.textContent = movieSelect.options[movieSelect.selectedIndex].text;
+        salesChart.update();
+      });
+      // cahrt 2 Tiket sales
+      let salesChart2 = new Chart(chartCanvas2, {
+        type: 'line',
+        data: {
+          labels: ['Jan', 'Feb', 'Mar', 'Apr'],
+          datasets: [
+            {
+              label: 'Sales',
+              data: dummyData2['avengers'],
+              borderColor: '#2563EB',
+              backgroundColor: 'rgba(37, 99, 235, 0.3)',
+              fill: true,
+              tension: 0.4,
+              pointBackgroundColor: '#2563EB',
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          scales: {
+            y: {
+              beginAtZero: true,
+              ticks: {
+                callback: (value) => `$${value}`,
+              },
+            },
+          },
+        },
+      });
+
+      filterBtn2.addEventListener('click', () => {
+        const selectedMovie2 = movieSelect2.value;
+        salesChart2.data.datasets[0].data = dummyData2[selectedMovie2];
+        movieTitle2.textContent = movieSelect2.options[movieSelect2.selectedIndex].text;
+        salesChart2.update();
+      });
+    </script> -->
+  </body>
+</html>
