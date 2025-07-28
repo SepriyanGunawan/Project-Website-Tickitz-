@@ -10,7 +10,7 @@
 }
 .benner-movie {
   width: 100%;
-  background-image: url(../img/benner-movie-details.svg);
+  /* background-image: url(../img/benner-movie-details.svg); */
   background-repeat: no-repeat;
   background-size: cover;
   height: 415px;
@@ -161,6 +161,14 @@ input[type='time']::-webkit-calendar-picker-indicator {
 }
 .movie-filter {
   width: 200px;
+}
+.img-details {
+  width: 320px;
+  /* border-radius: 20px;
+  overflow: hidden; */
+}
+.img-details img {
+  width: 100%;
 }
 /*============= section booktickets =============*/
 
